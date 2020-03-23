@@ -46,7 +46,8 @@
 
 int main( int argc, char **argv )
 {
-  QApplication qapp(argc, argv);
+  // Using QGuiApplication for QPixmap
+  QGuiApplication qapp(argc, argv);
 
   PythonQt::init(PythonQt::IgnoreSiteModule | PythonQt::RedirectStdOut);
 
