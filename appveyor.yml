@@ -25,6 +25,15 @@ environment:
       - MINGW: C:\Qt\Tools\mingw730_64
         QTDIR: C:\Qt\5.12\mingw73_64
         PYTHON_PATH: C:\Python37-x64
+        CONFIGURATION: debug
+      - MINGW: C:\Qt\Tools\mingw730_32
+        QTDIR: C:\Qt\5.12\mingw73_32
+        PYTHON_PATH: C:\Python38
+        CONFIGURATION: debug
+      - MINGW: C:\Qt\Tools\mingw730_32
+        QTDIR: C:\Qt\5.14.1\mingw73_32
+        PYTHON_PATH: C:\Python38
+        CONFIGURATION: debug
 
 #cache:
 #  - '%BUILD_DIR% -> **\*.pr?, appveyor.yml'
