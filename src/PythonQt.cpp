@@ -58,7 +58,7 @@
 
 #include <QDir>
 
-#include <pydebug.h>
+#include <cpython/pydebug.h>
 #include <vector>
 
 #ifdef __linux__
