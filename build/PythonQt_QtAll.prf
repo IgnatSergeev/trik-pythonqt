@@ -1,4 +1,7 @@
 # profile for non-mevis users to link to PythonQt_QtAll
-include(PythonQt.prf)
+include ( python.prf )  
+
+INCLUDEPATH += $$PWD/../src
 INCLUDEPATH += $$PWD/../extensions/PythonQt_QtAll
+!isEmpty(DESTDIR):LIBS += -L$$DESTDIR
 LIBS += -ltrikPythonQt_QtAll-Qt$${QT_MAJOR_VERSION}$${QT_MINOR_VERSION}-Python$${PYTHON_VERSION}$${DEBUG_EXT}
