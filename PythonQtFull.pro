@@ -21,7 +21,7 @@ include ( build/common.prf )
 include ( build/PythonQt.prf )  
 include ( build/python.prf )
 
-include(src/src.pri):export(HEADERS):export(SOURCES):export(DEFINES)
+include(src/src.pri)
 include(extensions/PythonQt_QtAll/PythonQt_QtAll.pri):export(HEADERS):export(SOURCES):export(DEFINES)
 
 unix {
