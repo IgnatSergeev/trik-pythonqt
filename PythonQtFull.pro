@@ -20,7 +20,7 @@ INCLUDEPATH += $$PWD/src
 include ( build/common.prf )  
 include ( build/python.prf )
 
-include(src/src.pri)
+include(src/src.pri):export(HEADERS):export(SOURCES):export(DEFINES)
 include(extensions/PythonQt_QtAll/PythonQt_QtAll.pri):export(HEADERS):export(SOURCES):export(DEFINES)
 
 unix {
