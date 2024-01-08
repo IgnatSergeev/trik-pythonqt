@@ -16,9 +16,8 @@ contains(QT_MAJOR_VERSION, 5) {
 QMAKE_CXXFLAGS_RELEASE -= -Zc:strictStrings
 
 INCLUDEPATH += $$PWD
-
+INCLUDEPATH += $$PWD/src
 include ( build/common.prf )  
-include ( build/PythonQt.prf )  
 include ( build/python.prf )
 
 include(src/src.pri)
