@@ -1,7 +1,6 @@
 TARGET=trikPythonQt_QtAll-Qt$${QT_MAJOR_VERSION}$${QT_MINOR_VERSION}-PythonXY
 TEMPLATE = lib
 
-TARGET = $$replace(TARGET, PythonXY, Python$${PYTHON_VERSION})
 CONFIG += dll qt
 CONFIG -= flat
 mingw:QMAKE_CXXFLAGS+=-Wa,-mbig-obj
@@ -19,6 +18,7 @@ INCLUDEPATH += $$PWD
 INCLUDEPATH += $$PWD/src
 include ( build/common.prf )  
 include ( build/python.prf )
+TARGET = $$replace(TARGET, PythonXY, Python$${PYTHON_VERSION})
 
 include(src/src.pri):export(HEADERS):export(SOURCES):export(DEFINES)
 include(extensions/PythonQt_QtAll/PythonQt_QtAll.pri):export(HEADERS):export(SOURCES):export(DEFINES)
